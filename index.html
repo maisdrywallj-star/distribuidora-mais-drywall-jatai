@@ -4,28 +4,150 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DISTRIBUIDORA +DRYWALL SISTEMA CONSTRUTIVO JATAÍ</title>
+
+  <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
     body { background: #f4f8fc; color: #1a1a1a; }
-    header { background: linear-gradient(90deg, #0d47a1, #1976d2); color: white; padding: 20px; }
-    .container { width: 90%; max-width: 1200px; margin: auto; }
-    .logo { display: flex; align-items: center; gap: 15px; }
-    .logo img { height: 60px; }
-    nav { margin-top: 15px; }
-    nav a { color: white; margin-right: 20px; text-decoration: none; font-weight: 500; }
-    .hero { background: url('fachada.jpg') center/cover no-repeat; color: white; padding: 100px 20px; text-align: center; }
-    .hero h1 { font-size: 36px; margin-bottom: 20px; }
-    .btn-whatsapp { display: inline-block; padding: 15px 25px; background: #25D366; color: white; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.3s; }
-    .btn-whatsapp:hover { background: #1ebe5d; }
-    section { padding: 60px 20px; }
-    .section-title { text-align: center; margin-bottom: 40px; color: #0d47a1; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
-    .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-    .card img { width: 100%; height: 220px; object-fit: cover; }
-    .card p { padding: 15px; font-weight: 500; text-align: center; }
-    footer { background: #0d47a1; color: white; text-align: center; padding: 30px 20px; }
-    iframe { width: 100%; height: 300px; border: 0; border-radius: 10px; }
+
+    header {
+      background: linear-gradient(90deg, #0d47a1, #1976d2);
+      color: white;
+      padding: 20px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('fachada.jpg') center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero h1 {
+      position: relative;
+      font-size: 38px;
+      margin-bottom: 20px;
+      z-index: 1;
+    }
+
+    .btn-whatsapp {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      padding: 15px 25px;
+      background: #25D366;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    .btn-whatsapp i {
+      margin-right: 8px;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0d47a1;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card p {
+      padding: 15px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 10px;
+    }
+
   </style>
 </head>
 <body>
@@ -36,6 +158,7 @@
       <img src="logo.png" alt="Logo +Drywall">
       <h2>DISTRIBUIDORA +DRYWALL SISTEMA CONSTRUTIVO JATAÍ</h2>
     </div>
+
     <nav>
       <a href="#produtos">Produtos</a>
       <a href="#sobre">Sobre</a>
@@ -45,12 +168,15 @@
 </header>
 
 <section class="hero">
-  <h1>Especialistas em Sistema Construtivo Drywall</h1>
-  <a class="btn-whatsapp" href="https://wa.me/message/M2LHKCFMRLLPO1" target="_blank">FAZER PEDIDO NO WHATSAPP</a>
+  <h1>Especialistas em Sistema Construtivo Drywall e Steel Frame</h1>
+  <a class="btn-whatsapp" href="https://wa.me/message/M2LHKCFMRLLPO1" target="_blank">
+    <i class="fab fa-whatsapp"></i> FAZER PEDIDO NO WHATSAPP
+  </a>
 </section>
 
 <section id="produtos">
   <h2 class="section-title">Nossos Produtos</h2>
+
   <div class="container grid">
 
     <div class="card">
@@ -80,7 +206,8 @@
   <div class="container">
     <h2 class="section-title">Sobre Nós</h2>
     <p style="text-align:center; max-width:800px; margin:auto;">
-      A DISTRIBUIDORA +DRYWALL SISTEMA CONSTRUTIVO JATAÍ é referência em materiais para construção a seco. Trabalhamos com as melhores marcas do mercado, oferecendo qualidade, agilidade e atendimento especializado.
+      A DISTRIBUIDORA +DRYWALL SISTEMA CONSTRUTIVO JATAÍ é referência em materiais para construção a seco.
+      Trabalhamos com as melhores marcas do mercado, oferecendo qualidade, agilidade e atendimento especializado.
     </p>
   </div>
 </section>
@@ -88,10 +215,20 @@
 <section id="contato">
   <div class="container">
     <h2 class="section-title">Localização</h2>
-    <iframe src="https://share.google/4p1UtlSJyLBsukZtz" loading="lazy"></iframe>
+
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.432892492123!2d-51.7316368!3d-17.8652007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93626bc1867000c3%3A0x3e5642647c89a9c!2sDISTRIBUIDORA%20%2BDRYWALL%20SISTEMA%20CONSTRUTIVO_Jata%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1770927945565!5m2!1spt-BR!2sbr"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
     <div style="text-align:center; margin-top:30px;">
-      <a class="btn-whatsapp" href="https://wa.me/message/M2LHKCFMRLLPO1" target="_blank">FAZER PEDIDO NO WHATSAPP</a>
+      <a class="btn-whatsapp" href="https://wa.me/message/M2LHKCFMRLLPO1" target="_blank">
+        <i class="fab fa-whatsapp"></i> FAZER PEDIDO NO WHATSAPP
+      </a>
     </div>
+
   </div>
 </section>
 
